@@ -8,6 +8,7 @@ import {coupons} from '../../constants/coupons';
 import speaker from '../Products/speaker.jpg'
 
 function Cart1({cart=[]}) {
+    
     const [totalPrice, setTotalPrice] = useState(0);
     const [totalItems, setTotalItems] = useState(0);
     const [coupon,setCoupon] =useState('');
@@ -138,8 +139,8 @@ function Cart1({cart=[]}) {
 }
 
 const mapStateToProps = (state) => {
-  return{
-    cart : state.cart
+  return {
+    cart:state.cart
   }
 }
 

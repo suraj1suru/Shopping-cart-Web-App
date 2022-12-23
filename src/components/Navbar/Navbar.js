@@ -52,9 +52,9 @@ function Navbar2({cart=[]}) {
 }
 
 const mapStateToProps = (state) => {
-   return {
-    cart : state.cart
-   }
+  return {
+    cart: state.cart
+  }
 }
 
 export default connect(mapStateToProps)(Navbar2);
